@@ -1,0 +1,65 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	
+	cout << "5+3 is: " << 5+3 << endl;
+	cout << "5%3 is: " << 5%3 << endl;
+	cout << "5/3 is: " << 5/3 << endl;
+	cout << "5.0/3 is: " << 5.0/3 << "\n";
+	cout << "(3>4)||(10<20): " << ((3>4)||(10<20)) << endl;
+	cout << "(3>4)||(10<20)&&(10>15): " << (((3>4)||(10<20))&&(10>15)) << endl;
+
+	int c;
+	c=5;
+	cout << c << endl;
+
+	double x(5.0);
+	int y(3);
+	cout << x/y << endl;
+
+	const int z = 5;
+	//z += 1 (will return error)
+	cout << z << endl;
+
+	int numOfx;
+	cout << "enter amount:";
+	cin >> numOfx;
+	cout << "amount is " << numOfx << endl;
+
+	int n = 5;
+
+    cout << "Post-Increment (n++):" << endl;
+    cout << n++ << endl; // Prints 5
+    cout << n << endl;   // Prints 6
+
+    n = 5; // Reset n to 5
+
+    cout << "Pre-Increment (++n):" << endl;
+    cout << ++n << endl; // Prints 6
+    cout << n << endl;   // Prints 6
+
+    for(int i=0; i<5, i++){
+    	cout<<i<< " ";
+    }
+
+    for(int i=0; i<6; i = i+1){
+    	cout<<i<<" ";
+    }
+
+    for(int i=0; i<6; i = i+2){
+    	cout<<i<<" ";
+    }
+
+    cout<<"test while statement"<<endl;
+    int k = 0;
+    while(k<6){
+    	cout<<k<<"";
+    	k = k +1;
+    }
+    cout<< endl;
+
+    cout<<(num%2==0 ? "num is even" : "num is odd") << endl;
+
+	return 0;
+}

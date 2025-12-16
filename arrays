@@ -1,0 +1,42 @@
+#include <iostream>
+using namespace std;
+
+// Function to calculate sum of elements in an array
+int sum(int a[], int size) {
+    int total = 0;
+    for (int i = 0; i < size; i++) {
+        total += a[i];
+    }
+    return total;
+}
+
+// Function to check if all elements are larger than a target value
+bool allLarger(int a[], int size, int target) {
+    for (int i = 0; i < size; i++) {
+        if (a[i] <= target) {
+            return false;
+        }
+    }
+    return true;
+}
+
+int main() {
+    // Declare and initialize an array
+    int a1[4] = {2, 3, 4, 5};
+
+    // Print first element of the array
+    cout << "a1[0]: " << a1[0] << endl;
+
+    // Call sum function and print result
+    cout << "Sum of elements: " << sum(a1, 4) << endl;
+
+    // Call allLarger function and print result
+    int target = 3;
+    if (allLarger(a1, 4, target)) {
+        cout << "All elements are larger than " << target << endl;
+    } else {
+        cout << "Not all elements are larger than " << target << endl;
+    }
+
+    return 0;
+}
