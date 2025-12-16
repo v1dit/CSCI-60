@@ -1,0 +1,9 @@
+Kangaroo
+Mouse 
+etc
+rm animals.txt
+
+
+
+
+dd
