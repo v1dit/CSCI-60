@@ -1,0 +1,15 @@
+#include <iostream>
+#include <string)
+
+class Bank
+{
+public:
+	string name;
+	int balance;
+};
+
+int main(){
+	Bank account1
+
+	return 0;
+}
